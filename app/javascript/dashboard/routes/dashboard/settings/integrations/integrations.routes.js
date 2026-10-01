@@ -9,6 +9,7 @@ import Slack from './Slack.vue';
 import Linear from './Linear.vue';
 import Notion from './Notion.vue';
 import Shopify from './Shopify.vue';
+import Izkwoot from './Izkwoot.vue';
 
 export default {
   routes: [
@@ -87,6 +88,16 @@ export default {
             permissions: ['administrator'],
           },
           props: route => ({ error: route.query.error }),
+        },
+        {
+          path: 'izkwoot',
+          name: 'settings_integrations_izkwoot',
+          component: Izkwoot,
+          meta: {
+            featureFlag: FEATURE_FLAGS.INTEGRATIONS,
+            permissions: ['administrator'],
+            reuseOnQueryChange: true,
+          },
         },
         {
           path: ':integration_id',

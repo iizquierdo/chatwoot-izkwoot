@@ -88,7 +88,8 @@ class DashboardController < ActionController::Base
       GIT_SHA: GIT_HASH,
       ALLOWED_LOGIN_METHODS: allowed_login_methods,
       ACTIVE_PLATFORM_BANNERS: active_platform_banners,
-      ACTIVE_FEATURE_ANNOUNCEMENTS: active_feature_announcements
+      ACTIVE_FEATURE_ANNOUNCEMENTS: active_feature_announcements,
+      GUILLE_KNOWLEDGE_URL: ENV.fetch('GUILLE_KNOWLEDGE_URL', 'http://localhost:3100/')
     }
   end
 

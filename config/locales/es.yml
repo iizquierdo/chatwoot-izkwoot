@@ -378,6 +378,10 @@ es:
     dashboard_apps:
       name: 'Panel de aplicaciones'
       description: 'Las aplicaciones de panel te permiten crear e incrustar aplicaciones que muestran información de usuario, pedidos o historial de pagos, proporcionando más contexto a tus agentes de soporte al cliente.'
+    izkwoot:
+      name: 'izkwoot'
+      short_description: 'Bases de conocimiento y bots de esta cuenta.'
+      description: 'Configurá las bases de conocimiento y los bots de izkwoot para esta cuenta. Cada bot responde con las bases que elijas y se conecta a las bandejas.'
     dyte:
       name: 'Dyte'
       short_description: 'Start video/voice calls with customers directly from Chatwoot.'

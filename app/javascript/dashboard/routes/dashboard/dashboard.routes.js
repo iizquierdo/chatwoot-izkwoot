@@ -31,6 +31,29 @@ export default {
         ...searchRoutes,
         ...helpcenterRoutes.routes,
         ...campaignsRoutes.routes,
+        {
+          path: frontendURL('accounts/:accountId/izkwoot/conocimiento'),
+          redirect: to => ({
+            name: 'settings_integrations_izkwoot',
+            params: { accountId: to.params.accountId },
+            query: { view: 'bases' },
+          }),
+        },
+        {
+          path: frontendURL('accounts/:accountId/izkwoot/bots'),
+          redirect: to => ({
+            name: 'settings_integrations_izkwoot',
+            params: { accountId: to.params.accountId },
+            query: { view: 'bots' },
+          }),
+        },
+        {
+          path: frontendURL('accounts/:accountId/knowledge'),
+          redirect: to => ({
+            name: 'settings_integrations_izkwoot',
+            params: { accountId: to.params.accountId },
+          }),
+        },
       ],
     },
     {

@@ -10,6 +10,12 @@
 # settings_json_schema: the json schema used to validate the settings hash (https://json-schema.org/)
 # settings_form_schema: the formulate schema used in frontend to render settings form (https://vueformulate.com/)
 ########################################################
+izkwoot:
+  id: izkwoot
+  logo: izkwoot.png
+  i18n_key: izkwoot
+  hook_type: account
+  allow_multiple_hooks: false
 webhooks:
   id: webhook
   logo: webhooks.png
